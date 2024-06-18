@@ -1,0 +1,138 @@
+.card .item .card__item, .card .item .card__item2, .card .item .card__item3, .card .item .card__item4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+  width: 200px;
+  color: #fff;
+  margin: 10px;
+  background-color: red;
+  border: 5px solid black;
+}
+
+.card .item .card__item:hover, .card .item .card__item2:hover, .card .item .card__item3:hover, .card .item .card__item4:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border: aqua;
+  border-radius: 10px 50px 10px 50px;
+  background-color: #fff;
+  color: black;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 2s all;
+  transition: 2s all;
+  -webkit-box-shadow: 10px 20px 10px 20px;
+          box-shadow: 10px 20px 10px 20px;
+}
+
+.block__text span, .link, .mamas .mixin, .mamas2 .mixin2 {
+  font-size: 50px;
+  border: 6px solid aquamarine;
+  border-radius: 35px;
+}
+
+.block__text span:hover, .link:hover, .mamas .mixin:hover, .mamas2 .mixin2:hover {
+  border-radius: 50px 15px 50px 15px;
+  color: yellow;
+  text-decoration: none;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 2s all;
+  transition: 2s all;
+  -webkit-box-shadow: 10px 10px 10px 10px aqua;
+          box-shadow: 10px 10px 10px 10px aqua;
+}
+
+.block {
+  padding: 30px;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.block__text {
+  font-size: 80px;
+  font-style: italic;
+}
+
+.block__text span {
+  color: aqua;
+}
+
+.block__big {
+  font-size: 50px;
+}
+
+.link {
+  color: aqua;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: green;
+}
+
+.mamas {
+  color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mamas2 {
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__img {
+  height: 200px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  width: 200px;
+  opacity: 0;
+}
+
+.card__img:hover {
+  opacity: 1;
+  background: url("/img/iphone.jpg");
+  background-size: contain;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+@media (max-width: 900px) {
+  .item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
